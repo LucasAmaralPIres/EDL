@@ -117,7 +117,7 @@ Saída:
 ### Conclusão
 
 Prolog é uma um linguagem muito diferente das outras linguagens de programação oferecendo uma maneira única de realizar algumas ações de maneira rápida e eficaz. Ela usa sentenças lógicas. Não é importante a ordem que é escrito as regras e os fatos.
-Basicamente um programa em Prolog é um banco de dados de informações que tem leis que demonstram como os fatos vão interagir entre si, cabe ao usário então fazer perguntas para o programa e este responde de acordo com as informações fornecidas. 
+Basicamente um programa em Prolog é um banco de dados de fatos que tem leis que demonstram como os fatos vão interagir entre si, cabe ao usário então fazer perguntas para o programa e este responde de acordo com as informações fornecidas. 
 
 
 ### Bibliografia
