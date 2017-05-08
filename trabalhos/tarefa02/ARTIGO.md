@@ -41,7 +41,7 @@ Antes de comparar as linguagens de programação, vamos destacar algumas particu
 - Toda varíavel tem de começar com _ ou letra maiuscula
 - Qualquer outra dado inicia-se com letra minúscula
 - Usa somente sentenças de fatos e regras
-- Temo com padrão resolver os problemas pelo uso de backtraking
+- Tem como padrão resolver os problemas pelo uso de backtraking
 - Finaliza a linha com um ponto final
 
 Prolog é muito diferente de qualquer outro tipo de linguagem de programação. Não apresenta as estruturas comuns.
