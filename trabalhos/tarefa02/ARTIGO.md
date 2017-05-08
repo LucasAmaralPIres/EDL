@@ -11,7 +11,7 @@ Um programa em Prolog é basicamente definir um banco de dados de informações 
 ### Origens e Influências
 
 Prolog foi primeira idealizado na França no início da década 70 e seu primeiro prótopio foi criado em 1972 por Alain Colmerauer and Phillipe Roussel usando a teoria criada por Robert Kowalski.
-Foi influenciada pelas clausúlas de Horn. Estas podem ser vistas na própria programação Prolog. Ao passar dos anos foram adicionados diversos funções a linguagem Prolog, porém é valído mencionar que por sua maior parte não há muita diferença entre uma versão moderna Prolog e a versão de 1972.
+Foi influenciada pelas clausulas de Horn. Estas podem ser vistas na própria programação Prolog. Ao passar dos anos foram adicionados diversos funções a linguagem Prolog, porém é valído mencionar que por sua maior parte não há muita diferença entre uma versão moderna Prolog e a versão de 1972.
 A estrutura básica do Prolog continua a mesma e não há nenhuma linguagem de programação derivada de Prolog até os dias de hoje.
 
 ### Classificação
