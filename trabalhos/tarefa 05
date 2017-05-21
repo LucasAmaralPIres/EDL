@@ -1,10 +1,10 @@
-function love.load ()
 --[[
 Nome: declaração da função 'love.load()'
 Propriedade: carregamento de biblioteca
 Binding time: tempo de compilação
-Explicação: somente durante a compilação que a biblioteca chamada será imporatada e adicionada ao programa, além de sua implementação ser transformada em código de máquina. isso ocorre durante a compilação e afeta todas as chamadas da bibiloteca durante o decorrer do programa.
+Explicação: somente durante a compilação que a biblioteca chamada será imporatada e adicionada ao programa, além de sua implementação ser transformada em código de máquina. Isso ocorre durante a compilação e afeta todas as chamadas da bibiloteca durante o decorrer do programa.
 --]]
+function love.load ()
     love.mouse.setVisible(false)
     img_mouse = love.graphics.newImage("mouse.png")
     img_bomba = love.graphics.newImage("bomba.png")
@@ -34,26 +34,26 @@ Explicação: somente durante a compilação que é avaliado se a sintaxe usada 
 function love.mousepressed( x, y, button, istouch )
     tutorial = 0
     if button == 1 then
-	    if perdeu == 0 then
+    	if perdeu == 0 then
         	for index,v in ipairs(armas) do
-            --[[
+                --[[
                 Nome: sintaxe 'for ... do'
                 Propriedade: sintaxe
                 Binding time: design da linguagem
-                Explicação: no período de design da linguagem, foi definido como seria implementado o comando 'for', por isso, sua sintaxe foi definida em tempo de design da linguagem.
-            --]]
-	    		  if (x < (v.x + 17) and x > (v.x - 10) and y < (v.y + 55) and y > (v.y - 13))  then
-	   			    table.remove(armas,index)
-				      ponto = ponto + 10
-			      end  
-          end
-   	  end
-	    if perdeu == 1 then
-		    perdeu = 0
-		    armas = {}
-		    ponto = 0
-		    dific = 150
-	    end
+                Explicação: no período de design da linguagem que é definido como  implementado o comando 'for', sua sintaxe foi definida em tempo de design da linguagem.
+            	--]]
+	    		if (x < (v.x + 17) and x > (v.x - 10) and y < (v.y + 55) and y > (v.y - 13))  then
+	   		    table.remove(armas,index)
+			      ponto = ponto + 10
+			end  
+                end
+   	end
+	if perdeu == 1 then
+	    perdeu = 0
+	    armas = {}
+	    ponto = 0
+	    dific = 150
+	end
     end
 end
 
@@ -71,7 +71,7 @@ function love.keypressed (key)
        Nome: palavra reservada 'not'
        Propriedade: semantica 
        Binding time: design de linguagem
-       Explicação: a palavra reservada 'not' é usada como uma maneira de negar a sentença posterior (devido ao seu significado), e isso é definido em design de linguagem
+       Explicação: a palavra reservada 'not' é usada como uma maneira de negar a sentença posterio e isso é definido em design de linguagem
        --]]
        love.mouse.setGrabbed(state)
     end
