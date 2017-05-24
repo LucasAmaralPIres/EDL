@@ -19,9 +19,9 @@ function love.load ()
     dific = 150
     --[[
       Nome: variável 'dific'
-      Propriedade: endereço
+      Propriedade: tipo
       Binding time: execução
-      Explicação: ao inicializar a execução é que saberemos qual o endereço da variável 'dific', pois só é ligado a variável ao endereço durante a execução
+      Explicação: só saberemos o tipo da varíavel dific em tempo de execução
     --]]
 end
 --[[
