@@ -28,20 +28,20 @@ end
 function love.mousepressed( x, y, button, istouch )
     tutorial = 0
     if button == 1 then
-	    if perdeu = 'NAO' then
-        	for index,v in ipairs(armas) do 
-	    		  if (x < (v.x + 17) and x > (v.x - 10) and y < (v.y + 55) and y > (v.y - 13))  then
-	   			    table.remove(armas,index) -- Nesta linha é removido o objeto após o player pressionar ele.
-				      ponto = ponto + 10
-			      end  
-   		    end
-   	  end
-	    if perdeu = 'SIM' then
+    	if perdeu = 'NAO' then
+        	for index = #armas,1,-1 do 
+	    		if (x < (armas[index].x + 17) and x > (armas[index].x - 10) and y < (armas[index].y + 55) and y > (armas[index].y - 13))  then
+	   			table.remove(armas,index) -- Nesta linha é removido o objeto após o player pressionar ele.
+				ponto = ponto + 10
+			end  
+   		end
+	end
+	if perdeu = 'SIM' then
 		    perdeu = 'NAO'
 		    armas = {}
 		    ponto = 0
 		    dific = 150
-	    end
+	end
     end
 end
 
