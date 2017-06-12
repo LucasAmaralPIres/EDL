@@ -20,12 +20,12 @@ Prolog é uma linguagem de programação lógica. Nela é possível fazer declar
 
 Exemplos de fatos:
     
-    a.                          Isso deve ser lido como a é verdadeiro
-    pai(joao,paulo).            Isso pode ser lido como Joao é pai de Paulo.
+    a.                          Isso deve ser lido como "a é verdadeiro"
+    pai(joao,paulo).            Isso pode ser lido como "Joao é pai de Paulo".
 
 Um exemplo de regra é:
 
-    h :- a, b.                  Isso deve ser lido como "h é verdadeiro se a e b forem verdadeiros. 
+    h :- a, b.                  Isso deve ser lido como "h é verdadeiro se a E b forem verdadeiros. 
     
 Prolog apresenta um conjunto de instruções e regras dinâmicos, o que significa que durante a excução é possível adicionar regras ou excluí-las. Adicionar fatos ou excluí-los. Essa linguagem não apresenta tipos de variáveis. Ela trabalha somente com estruturas lógicas. 
 
@@ -77,8 +77,8 @@ Terminal:
     ?- pais(X,Y).
     X = rafael,
     Y = alfredo ;
-    X = juliana,
-    Y = arthur ;
+    X = arthur,
+    Y = juliana ;
     X = monica,
     Y = juliana ;
     X = pedro,
