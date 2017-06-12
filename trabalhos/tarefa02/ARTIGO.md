@@ -33,7 +33,7 @@ Prolog é uma linguagem mais usada em inteligência artificial. Não é uma ling
 
 ### Comparação de Prolog com outras linguagens
 
-Escrever um programa em prolog pode ser fácil e rápido. Tendo um conjunto de regras que o seu problema tem que obdecer é fácil traduzir isso para uma estrutura de regra em Prolog. Tendo um conjunto de fatos como verdadeiros e fácil traduzir para Prolog.
+- Redigibilidade: Escrever um programa em prolog pode ser fácil e rápido. Tendo um conjunto de regras que o seu problema tem que obedecer é fácil traduzir isso para uma estrutura de regra em Prolog. Tendo um conjunto de fatos como verdadeiros e fácil traduzir para Prolog. Porém, este não é sempre o caso, como Prolog utiliza um algoritmo de backtraking para resolver problemas, é muitas vezes complicado adapatar a ideia do programador com as estruturas implementadas pelo Prolog automaticamente.
 
 Ler um programa em Prolog não é fácil. Tendo um conjunto de fatos e regras é difícil descobrir quais eram as intenções do programador. Literalmente temos um documento com vários fatos e como esse fatos interegem entre si. Quase que como uma investigação policial, para entender um programa em Prolog precisamos saber ligar os fatos as regras para saber a história toda.
 
