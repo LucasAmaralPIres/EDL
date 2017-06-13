@@ -33,7 +33,7 @@ Prolog é uma linguagem mais usada em inteligência artificial. Não é uma ling
 
 ### Redigibilidade e Legibilidade
 
-- Redigibilidade: Escrever um programa em prolog é complicado. Prolog utiliza um algoritmo de backtraking para resolver problemas. É muitas vezes complicado adapatar a ideia do programador com as estruturas implementadas pelo Prolog automaticamente. Apesar disso, podemos destacar como uma facilidade de esrever em Prolog o fato de ser fácil traduzir regras e fatos que o seu programa tem de obedecer para as estruturas de um programa em Prolog.
+- Redigibilidade: Escrever um programa em Prolog é complicado. Prolog utiliza um algoritmo de backtraking para resolver problemas. É muitas vezes complicado adaptar a ideia do programador com as estruturas implementadas pelo Prolog automaticamente. Apesar disso, podemos destacar como uma facilidade de escrever em Prolog o fato de ser fácil traduzir regras e fatos que o seu programa tem de obedecer para as estruturas de um programa em Prolog.
 
 - Legibilidade: Ler um programa em Prolog não é fácil. Tendo um conjunto de fatos e regras é difícil descobrir quais eram as intenções do programador. Literalmente temos um documento com vários fatos e como esse fatos interegem entre si. Quase que como uma investigação policial, para entender um programa em Prolog precisamos saber ligar os fatos as regras para saber a história toda.
 
