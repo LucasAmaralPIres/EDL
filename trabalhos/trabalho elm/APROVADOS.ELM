@@ -18,7 +18,7 @@ nome: Aluno -> String
 nome (nm,_,_) = nm              -- as notas são ignoradas
 
 ehaprovado: Aluno -> Bool
-ehaprovado a = (media a)>7
+ehaprovado a = (media a)>=7
 
 -- Por fim, considere as assinaturas para as funções map, filter, e fold a seguir:
 
