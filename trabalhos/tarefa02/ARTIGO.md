@@ -33,7 +33,7 @@ Prolog é uma linguagem mais usada em inteligência artificial. Não é uma ling
 
 ### Redigibilidade e Legibilidade
 
-- Redigibilidade: Escrever um programa em prolog pode ser fácil e rápido. Tendo um conjunto de regras que o seu problema tem que obedecer é fácil traduzir isso para uma estrutura de regra em Prolog. Tendo um conjunto de fatos como verdadeiros e fácil traduzir para Prolog. Porém, este não é sempre o caso, como Prolog utiliza um algoritmo de backtraking para resolver problemas, é muitas vezes complicado adapatar a ideia do programador com as estruturas implementadas pelo Prolog automaticamente.
+- Redigibilidade: Escrever um programa em prolog é complicado. Prolog utiliza um algoritmo de backtraking para resolver problemas. É muitas vezes complicado adapatar a ideia do programador com as estruturas implementadas pelo Prolog automaticamente. Apesar disso, podemos destacar como uma facilidade de esrever em Prolog o fato de ser fácil traduzir regras e fatos que o seu programa tem de obedecer para as estruturas de um programa em Prolog.
 
 - Legibilidade: Ler um programa em Prolog não é fácil. Tendo um conjunto de fatos e regras é difícil descobrir quais eram as intenções do programador. Literalmente temos um documento com vários fatos e como esse fatos interegem entre si. Quase que como uma investigação policial, para entender um programa em Prolog precisamos saber ligar os fatos as regras para saber a história toda.
 
@@ -115,6 +115,54 @@ C:
 Saída: 
 
     true
+
+Prolog(Quick Sort):
+
+        quick_sort([],[]).
+        quick_sort([H|T],Sorted):-
+	pivoting(H,T,L1,L2),quick_sort(L1,Sorted1),quick_sort(L2,Sorted2),
+	append(Sorted1,[H|Sorted2]).
+        pivoting(H,[],[],[]).
+        pivoting(H,[X|T],[X|L],G):-X=<H,pivoting(H,T,L,G).
+        pivoting(H,[X|T],L,[X|G]):-X>H,pivoting(H,T,L,G).
+
+C(Quick Sort):
+        
+    void quick_sort(int *a, int left, int right) 
+    {
+        int i, j, x, y;
+        i = left;
+        j = right;
+        x = a[(left + right) / 2];
+        while(i <= j) 
+        {
+                while(a[i] < x && i < right) 
+                {
+                        i++;
+                }
+                while(a[j] > x && j > left) 
+                {
+                        j--;
+                }
+                if(i <= j) 
+                {
+                        y = a[i];
+                        a[i] = a[j];
+                        a[j] = y;
+                        i++;
+                        j--;
+                }
+        } 
+        if(j > left) 
+        {
+                quick_sort(a, left, j);
+        }
+        if(i < right) 
+        {
+                quick_sort(a, i, right);
+        }
+     }
+
 
 ### Conclusão
 
